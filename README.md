@@ -4,6 +4,8 @@
 
 Users build a profile from their skills, interests and education, get personalised opportunity recommendations, and can upload a resume for AI-powered skill-gap analysis with suggested learning paths.
 
+🌐 **Live site:** [parwaaz-pk.vercel.app](https://parwaaz-pk.vercel.app)
+
 > 🚧 **Status:** in active development (v1).
 
 ## Features (v1)
@@ -25,6 +27,15 @@ Users build a profile from their skills, interests and education, get personalis
 | Database, auth, storage | [Supabase](https://supabase.com/) (PostgreSQL) |
 | AI | [Claude API](https://docs.claude.com/) |
 | Hosting | [Vercel](https://vercel.com/) |
+
+## Running locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000). Every push to `main` deploys automatically to Vercel.
 
 ## How recommendations work
 

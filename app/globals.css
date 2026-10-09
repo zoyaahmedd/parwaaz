@@ -1,26 +1,24 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Parwaaz brand colours. Use them in classes like bg-brand or text-ink. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-brand: #0f766e;        /* deep teal: buttons, links, highlights */
+  --color-brand-dark: #115e59;   /* hover state for brand buttons */
+  --color-brand-light: #ccfbf1;  /* soft teal backgrounds */
+  --color-accent: #f59e0b;       /* warm amber: small highlights */
+  --color-ink: #1c1917;          /* main text */
+  --color-muted: #57534e;        /* secondary text */
+  --color-surface: #fafaf9;      /* off-white section backgrounds */
+
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-urdu: var(--font-nastaliq);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
 }
